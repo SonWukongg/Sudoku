@@ -1,5 +1,5 @@
 
-IF you wish to see the solution used in the notebook skip to *** solution 2 ***
+IF you wish to see the solution used in the notebook skip to ***solution 2***
 # Solution 1 #
 
 1.1) I created a a 3d array, where x,y referred to the row and column, and z referred to the specific value in the list of values for current row column.
@@ -25,7 +25,7 @@ if there was only 1 possible value, then put this as the value and call the cons
 * Thus I made one function that checked all the grid values and their related positions to check if their where any contradictions
 * Another function to check if any position has no possible values
 
-I soon came to realise this was really inefficient, so Implemented this check *** if not possible *** function with the function in 1.4. This reduced the time complexity by O(n^2)
+I soon came to realise this was really inefficient, so Implemented this check ***if not possible*** function with the function in 1.4. This reduced the time complexity by O(n^2)
 
 1.6) After having dealt with the majority of very_easy, easy, and medium puzzles just from using constraint and checking positions with single values. I now needed to to implement back tracking.
 
@@ -111,7 +111,7 @@ if it is neither of the cases above
 2.5) Since algorithm uses strings and dictionaries instead of an array, I need 2 final functions. One to convert the numpy 2d array given into a string, so that it an be parsed into a dictionary, and the other to connect the dictionary into a 2d array so that it can be compared to the solution.
 
 
-As you can see the 2 attempts are pretty similar in the actual idea behind solving it. They both use constraint search but the main difference is the way the values are stored and the way the *** next position to check *** is worked out. In attempt 1 most of the time complexity came from using too many for loops to work out: 
+As you can see the 2 attempts are pretty similar in the actual idea behind solving it. They both use constraint search but the main difference is the way the values are stored and the way the ***next position to check*** is worked out. In attempt 1 most of the time complexity came from using too many for loops to work out: 
 * Positions
 * Removing values 
 * Checking if values had contradictions. 
